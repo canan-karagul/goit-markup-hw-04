@@ -52,7 +52,15 @@ p {
 img {
   max-width: 100%;
 }
+.icon{
+  border-radius: 50%;
+  fill: #F4F4FD;
+  
 
+}
+.icon:hover{
+color:rgba(49, 208, 170, 1);
+}
 /*basic style bitiş*/
 /*header başlangıç*/
 
