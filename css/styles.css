@@ -71,7 +71,7 @@ img {
   width: 40px;
 }
 .icon-list a:hover {
-  background-color: #31d0aa;
+  background-color: rgba(64, 75, 191, 1);
 }
 
 .icon {
@@ -155,13 +155,10 @@ img {
   color: #404bbf;
   
 }
-.nav-link:hover::after,
-.nav-link:focus::after{
-  color: #404bbf;
-    width: 100%;
-  
-}
 
+.nav-link.current::after {
+  width: 100%;
+}
 .navigation {
   display: flex;
   list-style-type: none;
@@ -218,34 +215,44 @@ img {
 /*header-contacts bitiş*/
 
 /*post sınıfı başlangıç*/
-.post {
+.post{
   background-color:#2E2F42;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   padding-top: 120px;
   padding-bottom: 120px;
-  text-align: center;
-  background-image: url(../images/people-office\ 1.jpg);
-  background-size:1440px;
-  background-position: center;
-  position: relative;
- height:600px;
 
+   background-image: url(../images/people-office-1.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  margin: 0 auto;
+   overflow: hidden; 
+  
+  max-width: 1440px;
+  height: 600px;
+   
 }
-.post .container {
- width: 100%;
- height:100%;
-   background-color:rgba(46, 47, 66, 0.7);
+  .post-container {
+  width: 100%;
+  height:100%;
+  background-color: rgba(46, 47, 66, 0.7);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: auto;
-  left: auto;
+
   text-align: center;
+ 
+ 
+ 
 }
 .post .title {
   color: #ffffff;
@@ -267,7 +274,7 @@ img {
   color: #ffffff;
   border: none;
   cursor: pointer;
-  transition: background-color 250ms ease;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .post-link:hover,
@@ -438,6 +445,15 @@ transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: left;
   gap: 8px;
   padding: 32px 16px;
+border-width: 0px 1px 1px 1px;
+border-style: solid;
+border-color: rgba(231, 233, 252, 1);
+
+
+
+
+
+  
 }
 .overlay-box{
   position:relative;
@@ -555,6 +571,7 @@ transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 120px;
   left: 540px;
+  width: 208px;
  
 }
 .social-title-footer {
@@ -589,7 +606,8 @@ transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 0.3s ease;
   height: 40px;
   width:40px;
-
 }
-
+.icon-footer a:hover{
+ background-color:#31d0aa;
+}
 /*footer sınıfı bitiş*/
