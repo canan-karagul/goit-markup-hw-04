@@ -223,9 +223,6 @@ img {
   align-items: center;
   flex-direction: column;
 
-  padding-top: 120px;
-  padding-bottom: 120px;
-
    background-image: url(../images/people-office-1.jpg);
   background-size:cover;
   background-position: center;
